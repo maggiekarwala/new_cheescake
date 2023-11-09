@@ -1,0 +1,325 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital@0;1&family=Alegreya:ital@0;1&family=Mrs+Saint+Delafield&display=swap');
+
+/* global styles */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: 'Alegreya Sans', sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-family: "Mrs Saint Delafield", cursive;
+  /* font-family: 'Alegreya', serif; */
+  
+  /* font-family: "Merriweather", serif; */
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* my own input below */
+/* Navbar logo */
+.navbar h1.logo {
+  /* margin-top: 1rem; */
+  color: #fff;;
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+  text-transform: capitalise;
+  /* font-family: "Mrs Saint Delafield", cursive; */
+  /* font-family: 'Figtree', sans-serif; */
+  /* font-family: 'Alegreya', serif; */
+  font-family: 'Alegreya Sans', sans-serif;
+  /* font-family: "Open Sans", san-serif; */
+  /* font-family: "Merriweather", serif; */
+  margin-top: 0.3rem;
+}
+
+
+h1.logo span {
+  text-transform: uppercase;
+  font-family: "Mrs Saint Delafield", cursive;
+  color: var(--text-primary);
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  opacity: 0.8;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  padding: 0 30px;
+  transition: 0.5s ease-in;
+}
+
+.navbar img {
+
+  height: 2rem;
+  /* margin-right: 50%; */
+  padding-right: 52%;
+}
+
+.navbar.top {
+  background: transparent;
+}
+
+/* Icons */
+.icons {
+  padding: 30px;
+}
+
+.icons h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: var(--text-secondary) 2px solid;
+}
+
+.navbar ul {
+  display: flex;
+  /* this is to make logo and menu equal */
+  margin-top: 12px;
+}
+/* below my own input again */
+nav ul li a {
+  
+  /* text-transform: uppercase; */
+  font-size: 1.1rem;
+  /* it used to be 0.9rem */
+  /* font-family: "Mrs Saint Delafield", cursive; */
+  font-family: 'Alegreya Sans', sans-serif;
+  
+}
+
+/* .navbar .logo {
+  font-weight: 400;
+} */
+
+/* HEADER */
+.hero {
+  background: url("../images/home/showcase.jpg") no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+
+.hero .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 20px;
+  /* padding so it doesnt rub up against the edge on the smaller screens, makes sense */
+}
+
+.hero .content h1 {
+  font-size: 7rem;
+  /* it was originally 55px */
+}
+
+.hero .content p {
+  font-size: 1.5rem;
+  max-width: 600px;
+  margin: 20px 0 30px;   
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.hero * {
+  z-index: 10;
+}
+
+.icons i {
+  background-color:var(--text-primary);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.samples img {
+  object-fit: cover;
+  height: 60vh;
+}
+.samples img:hover {
+  opacity: 0.7;
+}
+
+/* CALLBACK FORM  */
+.callback-form {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.callback-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.callback-form .form-control {
+  margin-bottom: 15px;
+}
+
+.callback-form input {
+  width: 100%;
+  padding: 4px;
+  height: 40px;
+  border: #f5f5f5 1px solid;
+}
+
+.callback-form input:focus {
+  outline-color: var(--text-secondary);
+}
+
+.callback-form .btn {
+  padding: 12px 0;
+  margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer a:hover {
+  color: var(--text-secondary);
+}
+
+.footer .social > * {
+  margin-right: 20px;
+}
+
+.footer i {
+  align-items: center;
+  justify-content: center;
+}
+
+/* MOBILE */
+@media(max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }
+
+  .navbar a {
+    padding: 10px 10px;
+    margin: 0 3px;
+  }
+
+  .hero .content h1 {
+    font-size: 4rem;
+  }
+
+  .hero .content p {
+    font-size: 1rem;
+  }
+
+  .flex-items {
+    flex-direction: column;
+  }
+
+  .flex-columns .column, .flex-grid .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .samples img {
+    height: 100px;
+  }
+
+  .team img {
+    width: 70%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

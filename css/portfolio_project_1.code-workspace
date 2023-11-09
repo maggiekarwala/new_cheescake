@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": ".."
+	},
+	{
+		"path": "../../cheese_cake_mania"
+	},
+	{
+		"path": "../../edgeledger_website_me"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "better_cheesecake"
+  }
+}
